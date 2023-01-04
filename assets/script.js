@@ -1,4 +1,8 @@
 var startButtonEl = $('#start-button')
+var displayTime = $('#timer')
+var displayScoreEl = $('#score')
+var bodyBoxEl = $('.box')
+
 var score = 0;
 var win;
 var lose;
@@ -17,7 +21,7 @@ function start(event){
 
 
 
-      
+// Vars      
 
 // start function
     //start timer 
