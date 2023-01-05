@@ -1,0 +1,28 @@
+body {
+margin: 3rem auto;
+max-width: 90vw;
+width: 50ch;
+background-color: rgb(48, 48, 48);
+color: white;
+font-family: 'Gill Sans';
+
+}
+
+body header {
+    position: relative;
+}
+
+section h1{
+    margin-left: 0px ;
+    margin-bottom: 10px;
+}
+section p{
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+section ol li{
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

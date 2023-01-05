@@ -2,31 +2,32 @@
 
 // Selectors
 var startButtonEl = $('#start-button')
-var displayTime = $('#timer')
+var displayTimeEl = $('#timer')
 var displayScoreEl = $('#score')
 var bodyBoxEl = $('#box')
-var questionDisplayEl = $('#display-questions')
 
 // Variables
-var time = 5;
 var score = 0;
 var win = 0;
 var lose = 0;
 var displayQuestions;
 var checkAnswer;
-var enndGame;
+var endGame;
 var playAgain;
-var timerDisplay;
 var questionNumber = 0
 
+var questionDisplayHeading = $(
+    '<h1 class="question-one question-two question-three all-done highscores>"'
+)
+
 var questions = [{
-    quesion: "What is the color of the sky?",
+    question: "What is the color of the sky?",
     userChoices: ["Blue","Red","Green","Brown"],
     correctAnswer: 0 
     },
     {
-    question: "Do dogs fly?",
-    userChoices: ["Yes","No"],
+    question: "What is an animal?",
+    userChoices: ["Desk","Dog","Cup","Car"],
     correctAnswer: 1
     },
     {
@@ -36,22 +37,25 @@ var questions = [{
 }]
 
 startButtonEl.on("click", function() {
+    
     timerDisplay()
-    questionDisplay()
-    checkAnswer()
-    enndGame()
-    playAgain()
+
+    
+    // checkAnswer()
+    // enndGame()
+    // playAgain()
 })
 
-timerDisplay = setInterval(function(){
-    time()
+var timerDisplay = setInterval(function(){
+
+    var time = 5
     time--;
     if (time > 0 ){
-        displayTime.text(time)
+        displayTimeEl.text(time)
     } else {
         time === 0
         lose++;
-        displayTime.text(time)
+        displayTimeEl.text(time)
         alert("Game Over")
         clearInterval(timerDisplay)
     }
