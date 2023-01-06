@@ -43,8 +43,6 @@ var questions = [{
 
 
 function queDisplay () {
-    clearDisplay = document.getElementById("queDisplay").reset()
-
     var queText = document.createElement("h2")
     var queButtonOne = document.createElement("button")
     var queButtonTwo = document.createElement("button")
