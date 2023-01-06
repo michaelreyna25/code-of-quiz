@@ -43,6 +43,8 @@ var questions = [{
 
 
 function queDisplay () {
+    clearDisplay = document.getElementById("queDisplay").reset()
+
     var queText = document.createElement("h2")
     var queButtonOne = document.createElement("button")
     var queButtonTwo = document.createElement("button")
@@ -53,6 +55,10 @@ function queDisplay () {
     queButtonThree.setAttribute("id", "2")
     queButtonFour.setAttribute("id", "3")
 
+    queButtonOne.setAttribute("onClick", "queDisplay()")
+    queButtonTwo.setAttribute("onClick", "queDisplay()")
+    queButtonThree.setAttribute("onClick", "queDisplay()")
+    queButtonFour.setAttribute("onClick", "queDisplay()")
     queText.textContent = questions[questionNumber].question
     queButtonOne.textContent = questions[questionNumber].userChoices[0]
     queButtonTwo.textContent = questions[questionNumber].userChoices[1]
@@ -66,20 +72,19 @@ function queDisplay () {
     displayQuestion.appendChild(queButtonFour)
 
 
-    var grabButtonId = document.getElementById(queButtonOne, queButtonTwo, queButtonThree, queButtonFour)
-
-    grabButtonId.addEventListener("click", function(){
-        return(queDisplay())
-    })
+    
     questionNumber++;
+    
 }
+
+
 
 //create var = getelbyid (w/ button id)
 //var addeventlistener click
     //re-run quequsplay on button 
 
 
-var timerDisplay = addEventListener(function(){
+var timerDisplay = document.addEventListener("click", function(){
 
     var time = 5
     time--;
