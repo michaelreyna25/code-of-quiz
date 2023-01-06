@@ -21,9 +21,6 @@ var userChoices;
 var correctAnswer;
 var questionIndex = 0
 
- 
- 
-
 
 var questions = [{
     question: "What is the color of the sky?",

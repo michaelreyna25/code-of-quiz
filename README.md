@@ -8,6 +8,8 @@ This Application is a short and small questionnaire that displays and array of q
 Why Build this Application?
 To show how fast one can get the answer right and collect a score.
 
+Deployed Website: https://michaelreyna25.github.io/code-of-quiz/ 
+
 ## Table of Contents (Optional)
 
 * [Installation](#installation)
@@ -23,16 +25,6 @@ To show how fast one can get the answer right and collect a score.
 - Git clone remote repository
 - Open up in your code studio
 - Open up via Live Brower and Enjoy!
-## Usage 
-
-Provide instructions and examples for use. Include screenshots as needed. 
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-```md
-![alt text](assets/images/screenshot.png)
-```
-
 
 ## Credits
 
