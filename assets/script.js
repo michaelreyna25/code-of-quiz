@@ -79,25 +79,24 @@ function queDisplay () {
     //re-run quequsplay on button 
 
 
-var timerDisplay = document.addEventListener("click", function(){
-
+function displayTimer () {
     var time = 5
-    time--;
     if (time > 0 ){
+        time--;
         
     } else {
         time === 0
         lose++;
         
         alert("Game Over")
-        clearInterval()
+        clearInterval(time)
     }
-}, 1000);
+};
 
 
 startButtonEl.addEventListener("click", function() {
     queDisplay()
-    timerDisplay()
+    displayTimer()
 
     
     // checkAnswer()
